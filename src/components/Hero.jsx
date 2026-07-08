@@ -28,7 +28,7 @@ const Hero = () => {
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-aurora opacity-60"></div>
         <img 
-          src="https://images.unsplash.com/photo-1596455607563-ad6193f76b11?q=80&w=2000&auto=format&fit=crop" 
+          src="https://plus.unsplash.com/premium_photo-1670745084868-7b4f727cc934?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
           alt="Bridal Mehndi Background" 
           className="w-full h-full object-cover opacity-30 mix-blend-overlay"
         />
