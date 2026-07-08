@@ -3,15 +3,62 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn } from 'lucide-react';
 
 const images = [
-  { id: 1, src: '/gallery/ada9d35e-b6ed-4e78-939c-62954b46b9b5.jpg', category: 'Bridal', height: 'h-64 md:h-80' },
-  { id: 2, src: '/gallery/b1e39281-c243-4bb1-83f9-81c175d22b94.jpg', category: 'Arabic', height: 'h-48 md:h-64' },
-  { id: 3, src: '/gallery/c6d3c3f6-67e5-470f-844d-6bffabfe8d7d.jpg', category: 'Back Hand', height: 'h-80 md:h-96' },
-  { id: 4, src: '/gallery/d3e30ea2-5207-40ce-be59-8d650f9299ed.jpg', category: 'Engagement', height: 'h-64 md:h-80' },
-  { id: 5, src: '/gallery/de705d00-244c-4cbf-81f8-e5b8410e82a1.jpg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 1, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.35 PM (1).jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 2, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.35 PM (2).jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 3, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.35 PM.jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 4, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.36 PM (1).jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 5, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.36 PM (2).jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 6, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.36 PM.jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 7, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.37 PM.jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 8, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.44 PM (1).jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 9, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.44 PM.jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 10, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.45 PM.jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 11, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.46 PM (2).jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 12, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.46 PM.jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 13, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.47 PM.jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 14, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.06.48 PM.jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 15, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.10 PM (1).jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 16, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.10 PM.jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 17, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.11 PM (1).jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 18, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.11 PM.jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 19, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.12 PM (1).jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 20, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.12 PM (2).jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 21, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.12 PM.jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 22, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.13 PM (1).jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 23, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.13 PM (2).jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 24, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.13 PM.jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 25, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.14 PM (2).jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 26, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.14 PM.jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 27, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.15 PM (1).jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 28, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.15 PM (2).jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 29, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.15 PM.jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 30, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.08.16 PM.jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 31, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.40 PM.jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 32, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.41 PM (1).jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 33, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.41 PM.jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 34, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.42 PM (1).jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 35, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.42 PM.jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 36, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.43 PM (1).jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 37, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.43 PM.jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 38, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.44 PM (1).jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 39, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.44 PM (2).jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 40, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.44 PM (3).jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 41, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.45 PM (1).jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 42, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.45 PM (2).jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
+  { id: 43, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.45 PM.jpeg', category: 'Back Hand', height: 'h-80 md:h-96' },
+  { id: 44, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.46 PM (1).jpeg', category: 'Engagement', height: 'h-64 md:h-80' },
+  { id: 45, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.46 PM (2).jpeg', category: 'Leg Mehndi', height: 'h-80 md:h-96' },
+  { id: 46, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.46 PM.jpeg', category: 'Bridal', height: 'h-64 md:h-80' },
+  { id: 47, src: '/photos collection/WhatsApp Image 2026-07-08 at 8.10.47 PM (2).jpeg', category: 'Arabic', height: 'h-48 md:h-64' },
 ];
 
 const Gallery = () => {
   const [selectedImg, setSelectedImg] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(12);
+
+  const handleViewMore = () => {
+    setVisibleCount(prev => prev + 12);
+  };
 
   return (
     <section id="gallery" className="py-24 relative overflow-hidden">
@@ -52,8 +99,8 @@ const Gallery = () => {
         </div>
 
         {/* Masonry-like Grid Layout */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-          {images.map((img, index) => (
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+          {images.slice(0, visibleCount).map((img, index) => (
             <motion.div
               key={img.id}
               initial={{ opacity: 0, scale: 0.9 }}
@@ -77,6 +124,18 @@ const Gallery = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* View More Button */}
+        {visibleCount < images.length && (
+          <div className="mt-16 flex justify-center">
+            <button 
+              onClick={handleViewMore}
+              className="px-10 py-4 rounded-full border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-dark font-semibold tracking-wide transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] hover:shadow-[0_0_25px_rgba(212,175,55,0.4)]"
+            >
+              Load More Masterpieces
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Lightbox */}

@@ -38,9 +38,6 @@ const Footer = () => {
           <p className="text-gray-500 text-sm">
             &copy; {new Date().getFullYear()} Rishi Mehndi Udaipur. All rights reserved.
           </p>
-          <div className="text-gray-500 text-sm">
-            Premium Web Design
-          </div>
         </div>
       </div>
     </footer>

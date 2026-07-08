@@ -20,8 +20,8 @@ const pricingPlans = [
   {
     id: 3,
     title: 'Guest Arabic Mehndi',
-    price: '300',
-    subtitle: 'Per Person',
+    price: '200',
+    subtitle: 'Starting Price',
     popular: false,
     features: ['Modern Arabic Patterns', 'One Side Hand Design', 'Fast Application', 'Perfect for Sangeet/Haldi'],
   }

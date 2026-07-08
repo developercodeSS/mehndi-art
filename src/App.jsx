@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Pricing from './components/Pricing';
 import Gallery from './components/Gallery';
+import VideoShowcase from './components/VideoShowcase';
 import Rating from './components/Rating';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -21,6 +22,7 @@ function App() {
       <Services />
       <Pricing />
       <Gallery />
+      <VideoShowcase />
       <Rating />
       <Testimonials />
       <Contact />
