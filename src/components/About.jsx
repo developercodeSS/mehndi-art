@@ -51,15 +51,15 @@ const About = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-white">Elegance</span> For Your Special Day
+              Beautiful Mehndi For Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-yellow-200">Special Day</span>
             </h2>
             
             <p className="text-gray-300 text-lg mb-6 leading-relaxed font-light">
-              We specialize in premium bridal mehndi, engagement mehndi, Arabic mehndi, guest mehndi, and customized traditional designs tailored perfectly to your style.
+              At <strong className="text-gold-400 font-medium tracking-wide">Rishi Mehandi Udaipur</strong>, we create beautiful and neat mehndi designs for brides, engagements, and families. Whether you want a heavy traditional design or a simple Arabic pattern, we make sure it perfectly matches your style.
             </p>
             
             <p className="text-gray-400 mb-10 leading-relaxed font-light">
-              Our goal is to make every bride feel special with unique, handcrafted mehndi designs. We believe in perfection, hygiene, and using the finest quality organic henna for a rich, dark stain.
+              We use only the best, 100% natural and organic henna to guarantee a deep, dark color that lasts long. Our goal is simple: to make you feel beautiful and completely stress-free on your big day with our professional and hygienic service.
             </p>
             
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 flex items-start gap-4">
